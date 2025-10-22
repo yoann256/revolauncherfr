@@ -11,17 +11,17 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Facile à utiliser',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Ce site utilise <a href="">Docusaurus</a> pour faire profiter
+        aux utilisateurs une expérience incroyable.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>

@@ -21,3 +21,11 @@
   align-items: center;
   justify-content: center;
 }
+
+.dlApp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 75%;
+  background: --ifm-color-primary-darker;
+}

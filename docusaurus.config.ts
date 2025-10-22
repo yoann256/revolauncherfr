@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Revo Launcher French Wiki',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Apprenez à utiliser Revo Launcher avec ce wiki !',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -95,7 +95,7 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Official Links',
+          title: 'Liens officiels',
           items: [
             {
               label: 'Original Wiki',
@@ -111,16 +111,12 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/xjrEMS9QY4',
             },
             {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
+              label: 'GitHub Officiel',
+              href: 'https://github.com/KaruzoHikari/Revo-Launcher/issues',
             },
           ],
         },
