@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
+  title: 'Revo Launcher French Wiki',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -75,19 +75,15 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Revo Launcher French Wiki',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: '/introduction', label: 'Introduction', position: 'left'},
+        {to: '/faq', label: 'FAQ', position: 'left'},
+        {to: '/animations', label: 'Animations', position: 'left'},
         {
           href: 'https://github.com/yoann256/revolauncherfr',
           label: 'GitHub',
@@ -99,11 +95,15 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Official Links',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Original Wiki',
+              href: 'https://github.com/KaruzoHikari/Revo-Launcher/wiki',
+            },
+            {
+              label: 'Revo Launcher Website',
+              href: 'https://karuzohikari.com/RevoLauncher',
             },
           ],
         },
