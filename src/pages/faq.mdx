@@ -1,0 +1,38 @@
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# FAQ (Foire Aux Questions)
+En-dessous est une liste de questions fréquemment posées. Utilisez les onglets pour naviguer entre les différentes questions.
+
+<Tabs>
+  <TabItem value="1" label="Comment mettre l'appli en tant que lanceur par défaut?" default>
+    Cliquez sur le bouton Revo, puis "Revo Launcher" -> "Utiliser l'app en tant que launceur".
+  </TabItem>
+  <TabItem value="2" label="Comment ajouter des nouvelles chaînes ?">
+    In order to add a new app to your channel, hold a blank space:
+      - Once the popup opens, you'll have to choose the action linked to the channel (opening an app, a game, a link...)
+      - Next, you have to choose the Icon animation. This is the animation that appears in the main menu, in the channel.
+          - If you know nothing about these animations, it's recommended you choose any of the Default ones (since they'll show the app's logo).
+          - You can learn more about animations in here.
+      - Finally, you need to choose a Banner animation. This is the animation that shows up when you open a channel, in the big screen.
+  </TabItem>
+  <TabItem value="3" label="Où sont stockées mes données ?">
+    Vos données Revo Launcher (incluant les chaînes, themes et animations) sont stockées dans les chemins suivants:
+      - Android (Version PlayStore): ``Internal Storage\Android\data\com.karuzohikari.wiiphone\files\``
+      - Android (Version GitHub): ``Internal Storage\Android\data\com.karuzohikari.wiiphonelauncher\files\``
+      - Windows: ``C:\Users\<Your User>\AppData\LocalLow\KaruzoHikari\Revo Launcher\``
+  </TabItem>
+  <TabItem value="4" label="Quels emulateurs supportent Revo Launcher ?">
+    _soon™_
+  </TabItem>
+  <TabItem value="5" label="Pourquoi l'appli se ferme en arrière-plan ?">
+    A cause de la nature de cette appli (animations avec objets multiple, certains jouant constamment), Revo Launcher utilise plus de RAM qu'un lanceur classique. Dans les versions récentes d'Android, l'appli se ferme en arrière-plan par le système en tant qu'optimisation, étant plus ou moins agressif selon le fabricant. Vous pouvez essayer deux choses:
+      - Activer le mode "Low memory" dans les paramètres de Revo Launcher.
+      - Désactiver les optimisations de batterie pour cette appli. Vous pouvez trouver plus d'infos à propos de ce problème ici: https://dontkillmyapp.com/
+  </TabItem>
+  <TabItem value="6" label="Comment ouvrir la console de debug ?">
+    You have to hold the "version text" for 5 seconds, same thing for closing it. This text is found in the Revo Launcher settings, on the bottom right. It reads "Revo Launcher vX.X".\
+    The debug console shows all the info that Revo Launcher is logging. Most of them are just regular messages, but sometimes you can also find warnings and errors here.\
+    If something is not working as expected when doing something, feel free to check the console! If a weird warning or errors gets logged, sending me a screenshot along with the repro steps will help me even more :)
+  </TabItem>
+</Tabs>
