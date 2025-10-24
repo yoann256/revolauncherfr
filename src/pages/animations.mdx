@@ -1,102 +1,120 @@
 :::warning
-
-Cette page n'a pas encore été traduite !
-
+Cette page peut avoir des erreurs de traduction !
 :::
-# Channel Animations
-Revo Launcher's key mechanic is the ability to create channel animations, for both the icon (animation in main menu) and banner (animation when you open a channel).
-They can seem very confusing to use at first. However, you can read all about them here in order to create your own animations!
 
-# Channel Animation editor
-You can access the animation editor through the Revo button. In there, you can choose to edit existing Icon or Banner channel animations, or even create new ones!
-Feel free to check the pre-created ones in order to learn more about them.
+# Animations de chaînes
+La mécanique clé de **Revo Launcher** est la possibilité de créer des **animations de chaînes**, à la fois pour l’icône (animation dans le menu principal) et pour la bannière (animation lorsque vous ouvrez une chaîne).  
+Elles peuvent sembler très confuses à utiliser au début. Cependant, vous pouvez tout apprendre à leur sujet ici afin de créer vos propres animations !
 
-When editing an animation, you can preview it by clicking "Preview" and then hitting the "Play" button.
-Hint! You can also preview any of the animations in the animation list by holding their title.
+# Éditeur d’animations de chaînes
+Vous pouvez accéder à l’éditeur d’animations via le **bouton Revo**. À l’intérieur, vous pouvez choisir de modifier les animations d’icône ou de bannière existantes, ou même d’en créer de nouvelles !  
+N’hésitez pas à consulter celles déjà créées afin d’en apprendre davantage à leur sujet.
 
-# Channel Animation types
-## Icon animations
-The icon animations are smaller than the banner animations, so it's okay if you use lower-quality images.
+Lors de la modification d’une animation, vous pouvez la prévisualiser en cliquant sur **« Prévisualiser »** puis sur le bouton **« Jouer »**.  
 
-When editing an Icon animation, you'll find that they have a "Loop duration" box. This is because all Icon animations loop, so make sure your animation returns to a proper initial state by the end of the loop!
+:::tip
+Vous pouvez également prévisualiser n’importe quelle animation de la liste en maintenant appuyé son titre.
+:::
 
-Their resolution is 930x700px.
+# Types d’animations de chaîne
+## Animations d’icônes
+Les animations d’icônes sont plus petites que les animations de bannière, donc il n’y a pas de problème à utiliser des images de moindre qualité.
 
-## Banner animations
-Banner animations usually take the whole phone screen, and play a sound when they're launched.
+Lors de l’édition d’une animation d’icône, vous verrez une case **« Durée de la Boucle : »**. Cela est dû au fait que toutes les animations d’icônes bouclent, donc assurez-vous que votre animation revienne à un état initial correct à la fin de la boucle !
 
-Their resolution is 1080x1650px.
+**Résolution :** 930x700 px
+
+## Animations de bannières
+Les animations de bannière occupent généralement tout l’écran du téléphone et jouent un son lorsqu’elles sont lancées.  
+
+**Résolution :** 1080x1650 px
 
 # Images
-Every channel animation is formed from various images that perform different animations.
+Chaque animation de chaîne est composée de plusieurs images qui exécutent différentes animations.
 
-If you click "Edit images", you'll find the list of images in the animation.
-Tip! If you hold the "Edit" button of any image, you can clone it! (animations and everything)
+Si vous cliquez sur **« Edit images »**, vous trouverez la liste des images dans l’animation.  
 
-Scroll down, and you'll find both "Add Image", "Add App Icon" and "Add Video".
-They behave the same, but the App Icon will use as image whatever app's icon is linked to your channel (so you can create generic animations that will look different with each linked app, like the default ones!).
-As for the videos, you can use .mp4 videos in your animations. However, keep in mind they need a few frames to buffer, so it looks best in icons rather than banners (feel free to try it anyway!)
+:::tip
+Si vous maintenez le bouton **« Edit »** d’une image, vous pouvez la cloner ! (animations incluses)
+:::
 
-Here, you will find various fields:
+En faisant défiler vers le bas, vous trouverez **« Ajouter Image »**, **« Ajouter icône d'appli »** et **« Ajouter Vidéo »**.  
+Ils se comportent de la même manière, mais **« Icône d'appli »** utilisera comme image l’icône de l’application liée à votre chaîne (vous pouvez ainsi créer des animations génériques qui auront un aspect différent selon chaque application liée, comme celles par défaut !).  
+Quant aux vidéos, vous pouvez utiliser des fichiers **.mp4** dans vos animations. Cependant, gardez à l’esprit qu’elles nécessitent quelques images pour le tampon, donc elles donnent un meilleur rendu dans les icônes plutôt que dans les bannières (mais n’hésitez pas à essayer !).
 
-- Image
-    - The image used for this Animated Image. Format is expected to be .png, .jpg or .gif (so you can use animated images!)
-- Initial position, scale and rotation
-    - It defines those initial values when the image appears in the animation (aka, when the start time is reached)
-    - Note: The app's camera is ortographic, which means the XY rotations won't change the look very much (it'll look like the image is squished, rather than rotated). The Z rotation will work as expected, though.
-- Layer
-    - The layer defines in which order all the animated images are gonna be drawn. Lower layers will push items to the background, while higher layers are gonna be pushed towards the foreground
-    - Keep in mind this doesn't change the scale or position of the images, only the order they're drawn in
-    - Negative layer values are allowed
-- Initial color
-    - The color the image will be tinted with. It works like a filter, so white == image is unchanged.
-- Start and End time
-    - These 2 important values specify when in the timeline the image is gonna appear.
-        - Start time: 0 means it appears right when the animation starts, higher values makes the image appear later
-        - End time: -1 means the image never disappears once it has spawned. Otherwise, specify a value (higher than the start time) for it to disappear
-And finally, you have the "Edit Anim." button, that allows you to add various animations to the images.
+### Champs disponibles
 
-# Image animations
-The image animations can be created from the "Edit Anim." button.
-Clicking on the animation name will show a popup explaining what each animation does.
+- **Image**
+  - L’image utilisée pour cette image animée. Le format attendu est **.png**, **.jpg** ou **.gif** (vous pouvez donc utiliser des images animées !)
+- **Position, échelle et rotation initiales**
+  - Définit ces valeurs initiales lorsque l’image apparaît dans l’animation (c’est-à-dire lorsque le temps de début est atteint).
+  - **Remarque :** la caméra de l’application est **orthographique**, ce qui signifie que les rotations XY ne changeront pas beaucoup l’apparence (l’image semblera écrasée plutôt que tournée). La rotation Z fonctionnera comme prévu.
+- **Calque (Layer)**
+  - Définit dans quel ordre les images animées seront dessinées. Les calques inférieurs envoient les éléments à l’arrière-plan, tandis que les calques supérieurs les placent au premier plan.
+  - Cela ne modifie ni l’échelle ni la position des images, seulement l’ordre dans lequel elles sont dessinées.
+  - Les valeurs négatives sont autorisées.
+- **Couleur initiale**
+  - La couleur avec laquelle l’image sera teintée. Cela fonctionne comme un filtre — **blanc = image inchangée.**
+- **Temps de début et de fin**
+  - Ces deux valeurs importantes spécifient à quel moment dans la chronologie l’image apparaîtra.
+    - **Start time :** 0 signifie qu’elle apparaît dès le début de l’animation ; des valeurs plus élevées la font apparaître plus tard.
+    - **End time :** -1 signifie que l’image ne disparaît jamais une fois apparue. Sinon, indiquez une valeur (supérieure au temps de début) pour qu’elle disparaisse.
 
-All animations have their own parameters, but the common ones are the following:
+Enfin, vous avez le bouton **« Modifider l'anim. »**, qui vous permet d’ajouter diverses animations aux images.
 
-- Start time
-    - It shows when in the timeline this specific animation should start (so, if it's a movement animation, it specifies when the image should start moving)
-- End time
-    - It shows when in the timeline this specific animation should end (if it's a movement animation, it says when the image should end its movement)
-- Should loop?
-    - It's a boolean that lets you choose whether this animation should loop or not.
-    - This means that, once the animation finishes, it starts with the same parameters again, endlessly.
-    - Keep in mind that this will NOT reset the image to their previous state (so, if you want to create a back-and-forward movement, you'll need to do 2 different animations for them)
-- Loop delay
-    - If the checkbox above is marked, it says how much this animation should wait before starting again (so, once the animation ends, it waits a bit until the animation starts again)
-    - This is usually used to chain animations: If an animation should loop a movement forward from 1s-3s, and move backwards from 3s-5s, then you'll want to add a delay of 2s to each
-- Ease
-    - This option does NOT appear in every animation. It basically lets you tweak how fast the values will change throughout the animation.
-    - You can easily see all the eases in this page: https://easings.net/
-Finally, each animation will contain its own parameters (the movement animation will ask you where the animation should move, the rotation animation where it should rotate, the shadow animation asks where the shadow should be projected...).
+# Animations d’images
+Les animations d’images peuvent être créées via le bouton **« Modifier l'anim »**.  
+Cliquer sur le nom d’une animation affichera une fenêtre contextuelle expliquant ce que fait chaque animation.
 
-If you do not know what some of them mean, try playing around with them! You can always preview what you're doing with the "Preview" -> "Play" buttons.
+Toutes les animations ont leurs propres paramètres, mais les plus courants sont les suivants :
 
-# Path animations
-A more unique animation is the Path animation. It allows you to set a number of waypoints that an image should move along, for easier or curved movement.
+- **Début**
+  - Indique à quel moment de la chronologie cette animation spécifique doit commencer (par exemple, quand l’image doit commencer à bouger).
+- **Fin**
+  - Indique à quel moment de la chronologie cette animation doit se terminer (par exemple, quand le mouvement doit s’arrêter).
+- **En boucle ?**
+  - C’est un booléen qui vous permet de choisir si cette animation doit boucler ou non.
+  - Cela signifie qu’une fois l’animation terminée, elle recommence avec les mêmes paramètres, indéfiniment.
+  - **Remarque :** cela ne réinitialisera pas l’image à son état précédent. Pour créer un mouvement aller-retour, créez deux animations distinctes.
+- **Délai de la boucle**
+  - Si la case ci-dessus est cochée, cela indique combien de temps l’animation doit attendre avant de recommencer (elle attend un peu après la fin avant de redémarrer).
+  - Cela est généralement utilisé pour **enchaîner** des animations.  
+    Exemple : si une animation doit boucler un mouvement vers l’avant de 1s à 3s, puis en arrière de 3s à 5s, vous voudrez ajouter un délai de 2s à chacune.
+- **Ease**
+  - Cette option n’apparaît pas dans toutes les animations.  
+    Elle permet de régler la vitesse de changement des valeurs au cours de l’animation.
+  - Vous pouvez voir facilement toutes les interpolations ici : [https://easings.net/](https://easings.net/)
 
-The Linear and CatmullRom Path Types will be enough for you 90% of the times!
-However, there's a special PathType called "Cubic Bézier". This is an advanced way of creating curves, and a standard among internet animations. You can find a lot of info about it online.
+Enfin, chaque animation contiendra ses propres paramètres (mouvement, rotation, ombre, etc.).
 
-If you're gonna use a Cubic Bézier path, keep in mind it's expecting you to add waypoints in "groups of 3", as shown here:
-![](https://user-images.githubusercontent.com/35693714/161345360-8b6c88f8-7e73-4843-8213-f81e52bc2503.png)
+:::tip
+Si vous ne savez pas ce que signifient certains paramètres, essayez ! Vous pouvez toujours prévisualiser avec **« Preview » → « Play »**.
+:::
 
-# Where are the animations saved?
-Both channels and animations are saved in...:
+# Animations de trajectoire
+Une animation plus unique est l’animation de **trajectoire**.  
+Elle vous permet de définir un certain nombre de **points de passage** le long desquels une image doit se déplacer, pour un mouvement plus fluide ou courbé.
 
--   Android: ``Internal Storage\Android\data\com.karuzohikari.wiiphone\files\<Channels or Animations>``
--   Windows: ``C:\Users\<Your User>\AppData\LocalLow\KaruzoHikari\Revo Launcher\<Channels or Animations>``
-You can backup your files this way, and even send animations and Main Menu layouts to your friends! (they'll get loaded when the app starts, if you place them in their folders)
+Les types de trajectoire **Linear** et **CatmullRom** suffiront dans 90 % des cas !  
+Cependant, il existe un type spécial appelé **« Cubic Bézier »**.  
+C’est une méthode avancée de création de courbes, et un standard des animations sur Internet. Vous pouvez trouver beaucoup d’informations à ce sujet en ligne.
 
-# Additional actions
-Some extra actions can be triggered in the editor!
+Si vous utilisez une trajectoire **Cubic Bézier**, gardez à l’esprit qu’elle attend que vous ajoutiez les points de passage par **groupes de 3**, comme illustré ici :
 
-Cloning an image: Hold the "Edit" button
+![Exemple de Cubic Bézier](https://user-images.githubusercontent.com/35693714/161345360-8b6c88f8-7e73-4843-8213-f81e52bc2503.png)
+
+# Où les animations sont-elles enregistrées ?
+Les chaînes et les animations sont enregistrées dans :
+
+- **Android :**  
+  `Internal Storage\Android\data\com.karuzohikari.wiiphone\files\<Channels or Animations>`
+- **Windows :**  
+  `C:\Users\<Your user>\AppData\LocalLow\KaruzoHikari\Revo Launcher\<Channels or Animations>`
+
+Vous pouvez sauvegarder vos fichiers de cette manière, et même envoyer des animations et des dispositions de menu principal à vos amis !  
+(Elles seront chargées au démarrage de l’application si vous les placez dans les bons dossiers.)
+
+# Actions supplémentaires
+Certaines actions supplémentaires peuvent être déclenchées dans l’éditeur !
+
+**Cloner une image :** maintenez le bouton **« Modifier »**.

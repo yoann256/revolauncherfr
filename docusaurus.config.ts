@@ -108,7 +108,7 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Communauté',
           items: [
             {
               label: 'Discord',
@@ -121,7 +121,7 @@ const config: Config = {
           ],
         },
         {
-          title: 'More',
+          title: 'Plus',
           items: [
             {
               label: 'Blog',
@@ -129,7 +129,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/yoann256/revolauncherfr',
             },
           ],
         },
